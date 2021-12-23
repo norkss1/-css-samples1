@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>-Parallax-</title>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+<section>
+    <img src="images/stars.png" id="stars">
+    <img src="images/moon.png" id="moon">
+    <img src="images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Moon Light</h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="images/mountains_front.png" id="mountains_front">
+</section>
+<div class="sec" id="sec">
+    <h2>Parallax Scrolling Effects</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos eius
+        excepturi ipsum, nesciunt non
+        quasi repellendus suscipit temporibus unde. Ea eligendi laborum optio recusandae sapiente! Deleniti eius ipsa
+        provident? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi dolorum ea earum ipsam! Ad
+        asperiores impedit possimus voluptatibus! Ab aliquid, aperiam atque fugiat quasi qui quidem rerum. Distinctio,
+        sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut deserunt dolor doloremque eligendi
+        est expedita facilis, iste iure laboriosam modi molestiae nihil numquam perspiciatis saepe sapiente voluptatem,
+        voluptates voluptatibus!
+    </p>
+</div>
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountainsBehind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountainsFront = document.getElementById('mountains_front');
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', () => {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountainsBehind.style.top = value * 0.5 + 'px';
+        mountainsFront.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+
+</body>
+</html>
