@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Search-Bar</title>
+</head>
+<body>
+
+<div class="search">
+    <div class="icon"></div>
+    <div class="input">
+        <input id="mySearch" type="text" placeholder="Search">
+    </div>
+    <span class="clear" onclick="document.getElementById('mySearch').value = ''"></span>
+</div>
+
+<script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+
+    icon.onclick = function (){
+        search.classList.toggle('active')
+    }
+</script>
+
+</body>
+</html>
